@@ -24,7 +24,12 @@ which is concatenated with the graph from the year 2021.
 Then, I made a .py file called app.py which allows the ML model to be mounted on to website. For this file to run I had to call the functions of the 
 LSTM model from another .py file titled MyLSTM.py. 
 
+# Instructions for Running the Files
 
+If the files are directly downloaded from the GitHub repository then, make sure that all the downloaded files are in the same directory. 
+Open app.py and run the file. You'll be able to find the URL for the website that would be hosted as a local host.
+
+There is also a link for Docker Hub provided in this repository and the files could be pulled from Docker
 
 
 
