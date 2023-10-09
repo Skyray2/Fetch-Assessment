@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Your Website - Page 2</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <a href="index.html"><img src="{{ url_for('static', filename='css/logo.png') }}" alt="Logo" class="logo"></a>
+            <h1 class="Fetch Assessment">Fetch Assessment</h1>
+        </header>
+        <div class="frame">
+            <div class="text-box">
+            <p>The data that was provied for this assessment was a time-series data which signified the balue of the receipts for each day in the year 2021. The graph obtained from this data can be seen in the graph </p>
+        </div>
+        </div>
+        <div class="centered-frame img">
+            <img src="{{ url_for('static', filename='css/data.png') }}" alt="Image">
+        </div>
+        
+        </div>
+        <div id="loading"  class="loading-container" style="display:none;"><img src="/static/loading_bar.gif" alt="" /></div>
+
+        <div class="frame">
+<div class="text-box">
+            {{ prediction_text }}
+            </div>
+        
+        </div>
+        <form action="{{ url_for('predict')}}"method="post" >
+        <div class="frame">
+<div class="text-box">            
+<div class="dropdown-frame">
+            <label for="months">Choose the month for which the values have to be predicted and press on predict. Please wait for a few seconds  :</label>
+            <select id="months" name="selected_month">
+                <option value="0_31_January">January</option>
+        <option value="32_59_February">February</option>
+        <option value="60_90_March">March</option>
+        <option value="91_120_April">April</option>
+        <option value="121_151_May">May</option>
+        <option value="152_181_June">June</option>
+        <option value="182_212_July">July</option>
+        <option value="213_242_August">August</option>
+        <option value="243_273_September">September</option>
+        <option value="274_303_October">October</option>
+        <option value="304_334_November">November</option>
+        <option value="335_365_December">December</option>
+            </select>
+            <button type="submit" class="btn btn-primary btn-block btn-large" onclick="$('#loading').show();">Predict </button>
+        </form>
+       
+
+        </div>
+</div>
+
+</div>
+        <div class="frame">
+            <div class="text-box">
+            <p>The predicted values obtained for the next year is visulized in a graph show below. The graph is appended to the 2021 graph to depict the growth in the recipts value. </p>
+        
+    </div>
+
+         <div class="centered-frame img">
+            <img src="{{ url_for('static', filename='css/pdata.png') }}" alt="Image">
+        </div>
+</body>
+</html>
