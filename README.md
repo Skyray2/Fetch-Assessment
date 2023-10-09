@@ -17,6 +17,14 @@ But the result obtained from the code written from scratch didn't provide result
 Neural Networks. I tried out various CNN architectures and finally settled on LSTM. This model was giving out good results and unlike random 
 forest, its computational time was low.
 
+Then, I decided to develop a one-page website using HTML. This website provides basic information about the data and then asks the user to select the
+month for which they want to obtain the predicted data for the year 2022. It also at the bottom shows the overall graph with the data predicted
+which is concatenated with the graph from the year 2021. 
+
+Then, I made a .py file called app.py which allows the ML model to be mounted on to website. For this file to run I had to call the functions of the 
+LSTM model from another .py file titled MyLSTM.py. 
+
+
 
 
 
