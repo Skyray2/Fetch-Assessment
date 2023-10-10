@@ -41,6 +41,12 @@ Press enter after you have typed this. Now, open your browser and type: localhos
 
 You'll be able to view the website now. 
 
+If you get an error saying the port is already allocated then try a different number instead of 1000 like 2000 or 3000 or any other 4 digit number, for ex:
+
+docker container run -d -p 2000:5000 sbaskar2/fetch-assessment-final:0.0.1.RELEASE 
+
+and follow the same instruction above of opening the browser and typing in localhost:????. The number that you have chosen to replace 1000. 
+
 ## Alternate Method
 
 If the files are directly downloaded from the GitHub repository then, make sure that all the downloaded files are in the same directory. 
