@@ -26,20 +26,25 @@ LSTM model from another .py file titled MyLSTM.py.
 
 # Instructions for Running the Files
 
-If the files are directly downloaded from the GitHub repository then, make sure that all the downloaded files are in the same directory. 
-Open app.py and run the file. You'll be able to find the URL for the website in the terminal that would be hosted as a local host.
 
-
-## Docker pull link: sbaskar2/fetch-assessment-final:0.0.1.RELEASE
+## Docker pull Instructions: 
 
 Make sure that you have opened the Dockerhub. Open the terminal or command prompt in your system and type:
+
+docker pull sbaskar2/fetch-assessment-final:0.0.1.RELEASE
+
+After the container is pulled type the below command in the terminal:
 
 docker container run -d -p 1000:5000 sbaskar2/fetch-assessment-final:0.0.1.RELEASE
 
 Press enter after you have typed this. Now, open your browser and type: localhost:1000
 
-You'll be able at the website now. 
+You'll be able to view the website now. 
 
+## Alternate Method
+
+If the files are directly downloaded from the GitHub repository then, make sure that all the downloaded files are in the same directory. 
+Open app.py and run the file. You'll be able to find the URL for the website in the terminal that would be hosted as a local host.
 
 
 
