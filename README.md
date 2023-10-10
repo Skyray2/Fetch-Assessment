@@ -33,6 +33,8 @@ There is also a link for Docker Hub provided in this repository and the files co
 docker pull sbaskar2/fetch-assessment-final:0.0.1.RELEASE Use this pull request on the terminal after making sure that the local docker hub is 
 working. 
 
+## Docker pull link sbaskar2/fetch-assessment-final:0.0.1.RELEASE
+
 
 
 
